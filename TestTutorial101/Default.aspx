@@ -98,20 +98,20 @@
                     <b>We conduct Road safety & Lifesaving classes in schools.</b>
                      <div class="row">
                          <div class="col-md-6 col-sm-6">
-                    <img class="img-responsive" src="images/gallery/RoadSafety.jpg" />
+                    <img class="img-responsive" src="images/gallery/RoadSafety.jpg" style="height: 270px; width: 558px"  />
                 </div>
                 <div class="col-md-6 col-sm-6">
-                    <img class="img-responsive" src="images/gallery/RoadSafety1.jpg" style="height: calc(70vh - 114px); width: 100%;"  />
+                    <img class="img-responsive" src="images/gallery/RoadSafety1.jpg" style="height: 270px; width: 558px"  />
                 </div>
                            
                         </div>
                         
                         <div class="row">
                             <div class="col-sm-6 pull-left">
-                                 <img class="img-responsive"  src="images/gallery/LifeSave.jpg"  style="padding-top:12px;"  />
+                                 <img class="img-responsive"  src="images/gallery/LifeSave.jpg"  style="height: 270px; width: 558px; padding-top:12px;"  />
                             </div>
                             <div class="col-sm-6 pull-left">
-                                <img class="img-responsive"  src="images/gallery/LifeSave1.jpg"  style="padding-top:12px;  height: calc(67vh - -55px); width: 100%;"/>
+                                <img class="img-responsive"  src="images/gallery/LifeSave1.jpg"  style="padding-top:12px;  height: 270px; width: 558px"/>
                             </div>
                         </div>
                    
