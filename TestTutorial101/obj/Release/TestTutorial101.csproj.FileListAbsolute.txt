@@ -1,0 +1,8 @@
+E:\10-2-2019\20201101\New folder\20201101\20201101\TestTutorial101\TestTutorial101\bin\TestTutorial101.dll.config
+E:\10-2-2019\20201101\New folder\20201101\20201101\TestTutorial101\TestTutorial101\bin\TestTutorial101.dll
+E:\10-2-2019\20201101\New folder\20201101\20201101\TestTutorial101\TestTutorial101\bin\TestTutorial101.pdb
+E:\10-2-2019\20201101\New folder\20201101\20201101\TestTutorial101\TestTutorial101\obj\Release\TestTutorial101.csprojAssemblyReference.cache
+E:\10-2-2019\20201101\New folder\20201101\20201101\TestTutorial101\TestTutorial101\obj\Release\TestTutorial101.csproj.CoreCompileInputs.cache
+E:\10-2-2019\20201101\New folder\20201101\20201101\TestTutorial101\TestTutorial101\obj\Release\TestTutorial101.csproj.CopyComplete
+E:\10-2-2019\20201101\New folder\20201101\20201101\TestTutorial101\TestTutorial101\obj\Release\TestTutorial101.dll
+E:\10-2-2019\20201101\New folder\20201101\20201101\TestTutorial101\TestTutorial101\obj\Release\TestTutorial101.pdb

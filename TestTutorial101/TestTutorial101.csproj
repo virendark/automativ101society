@@ -1,0 +1,514 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D085EE83-31AF-4ED9-A6D7-AC780275307A}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TestTutorial101</RootNamespace>
+    <AssemblyName>TestTutorial101</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>..\..\..\..\July Work\Application\NewGSTApps\NewGSTApps\bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=4.1.0.0, Culture=neutral, PublicKeyToken=e44a2bc38ed2c13c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\2017\November\PicknGetShop_Current\PicknGetShop\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\2017\November\PicknGetShop_Current\PicknGetShop\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AccountActivate.aspx" />
+    <Content Include="Admin\Dashboard.aspx" />
+    <Content Include="Admin\Events.aspx" />
+    <Content Include="Admin\Jobs-Details.aspx" />
+    <Content Include="Admin\Student-Details.aspx" />
+    <Content Include="Admin\View-Events.aspx" />
+    <Content Include="Admin\View-Jobs.aspx" />
+    <Content Include="Admin\View-Students.aspx" />
+    <Content Include="All-Jobs.aspx" />
+    <Content Include="All-Students.aspx" />
+    <Content Include="blog.html" />
+    <Content Include="Career.aspx" />
+    <Content Include="Change-Password.aspx" />
+    <Content Include="ContactUs.aspx" />
+    <Content Include="CustomerDetails.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Events.aspx" />
+    <Content Include="extra-images\1503903686025.jpg.jpg" />
+    <Content Include="extra-images\2.jpg" />
+    <Content Include="extra-images\7.jpg" />
+    <Content Include="extra-images\8.jpg" />
+    <Content Include="extra-images\8m.jpg" />
+    <Content Include="extra-images\application-banner.jpg" />
+    <Content Include="extra-images\Auto2006.jpg" />
+    <Content Include="extra-images\Automotive_Banner.png" />
+    <Content Include="extra-images\banner-1.jpg" />
+    <Content Include="extra-images\banner-2.jpg" />
+    <Content Include="extra-images\banner-potash.jpg" />
+    <Content Include="extra-images\banner-soda.jpg" />
+    <Content Include="extra-images\quality-banner.jpg" />
+    <Content Include="extra-images\quality1.jpg" />
+    <Content Include="extra-images\quality1o.jpg" />
+    <Content Include="extra-images\qualityl.jpg" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="ForgotPasswaord.aspx" />
+    <Content Include="Gallery.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="HomeMaster.Master" />
+    <Content Include="images\ASDC.png" />
+    <Content Include="images\banner1.jpg" />
+    <Content Include="images\banner2.jpg" />
+    <Content Include="images\banner3.jpg" />
+    <Content Include="images\gallery\Banner1.jpg" />
+    <Content Include="images\gallery\Banner2.JPG" />
+    <Content Include="images\gallery\Banner3.JPG" />
+    <Content Include="images\gallery\Banner4.JPG" />
+    <Content Include="images\gallery\Banner5.png" />
+    <Content Include="images\gallery\computerlab.jpg" />
+    <Content Include="images\gallery\images.jpg" />
+    <Content Include="images\gallery\LifeSave.jpg" />
+    <Content Include="images\gallery\LifeSave1.jpg" />
+    <Content Include="images\gallery\RoadSafety.jpg" />
+    <Content Include="images\gallery\RoadSafety1.jpg" />
+    <Content Include="images\NSDC.jpg" />
+    <Content Include="images\PMKVY.png" />
+    <Content Include="images\service\Automobile trade.jpg" />
+    <Content Include="images\service\establishing-own-business.jpg" />
+    <Content Include="images\service\Society-extends.JPG" />
+    <Content Include="images\service\Vocational-Training.JPG" />
+    <Content Include="images\web_101_spn.jpg" />
+    <Content Include="images\web_102_spn.jpg" />
+    <Content Include="Job-Details.aspx" />
+    <Content Include="Jobs.aspx" />
+    <Content Include="Registration.aspx" />
+    <Content Include="Reg_with_Image.aspx" />
+    <Content Include="Admin\AdminMaster.Master" />
+    <None Include="Properties\PublishProfiles\automotive101society.com - Web Deploy.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\animate.min.css" />
+    <Content Include="css\bootstrap-theme.css" />
+    <Content Include="css\bootstrap-theme.min.css" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\font-awesome.css" />
+    <Content Include="css\font-awesome.min.css" />
+    <Content Include="css\main.css" />
+    <Content Include="css\prettyPhoto.css" />
+    <Content Include="css\responsive.css" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="images\accordion1.png" />
+    <Content Include="images\Auto2006.jpg" />
+    <Content Include="images\blog\avatar.jpg" />
+    <Content Include="images\blog\avatar1.png" />
+    <Content Include="images\blog\avatar2.png" />
+    <Content Include="images\blog\avatar3.png" />
+    <Content Include="images\blog\blog1.jpg" />
+    <Content Include="images\blog\blog2.jpg" />
+    <Content Include="images\blog\boy.png" />
+    <Content Include="images\blog\boy2.png" />
+    <Content Include="images\blog\boy3.png" />
+    <Content Include="images\blog\comments_bg.png" />
+    <Content Include="images\blog\gallery1.png" />
+    <Content Include="images\blog\gallery2.png" />
+    <Content Include="images\blog\gallery3.png" />
+    <Content Include="images\blog\gallery4.png" />
+    <Content Include="images\blog\gallery5.png" />
+    <Content Include="images\blog\gallery6.png" />
+    <Content Include="images\blog\girl.png" />
+    <Content Include="images\blog\thumb1.jpg" />
+    <Content Include="images\blog\thumb2.jpg" />
+    <Content Include="images\blog\thumb3.jpg" />
+    <Content Include="images\contact.png" />
+    <Content Include="images\gallery\d.png" />
+    <Content Include="images\gallery\gallery1.jpg" />
+    <Content Include="images\gallery\gallery2.jpg" />
+    <Content Include="images\gallery\gallery3.jpg" />
+    <Content Include="images\gallery\gallery4.jpg" />
+    <Content Include="images\gallery\gallery5.jpg" />
+    <Content Include="images\gallery\gallery6.jpg" />
+    <Content Include="images\image_bg.png" />
+    <Content Include="images\logo.jpg" />
+    <Content Include="images\prettyPhoto\dark_rounded\btnNext.png" />
+    <Content Include="images\prettyPhoto\dark_rounded\btnPrevious.png" />
+    <Content Include="images\prettyPhoto\dark_rounded\contentPattern.png" />
+    <Content Include="images\prettyPhoto\dark_rounded\default_thumbnail.gif" />
+    <Content Include="images\prettyPhoto\dark_rounded\loader.gif" />
+    <Content Include="images\prettyPhoto\dark_rounded\sprite.png" />
+    <Content Include="images\prettyPhoto\dark_square\btnNext.png" />
+    <Content Include="images\prettyPhoto\dark_square\btnPrevious.png" />
+    <Content Include="images\prettyPhoto\dark_square\contentPattern.png" />
+    <Content Include="images\prettyPhoto\dark_square\default_thumbnail.gif" />
+    <Content Include="images\prettyPhoto\dark_square\loader.gif" />
+    <Content Include="images\prettyPhoto\dark_square\sprite.png" />
+    <Content Include="images\prettyPhoto\default\default_thumb.png" />
+    <Content Include="images\prettyPhoto\default\loader.gif" />
+    <Content Include="images\prettyPhoto\default\sprite.png" />
+    <Content Include="images\prettyPhoto\default\sprite_next.png" />
+    <Content Include="images\prettyPhoto\default\sprite_prev.png" />
+    <Content Include="images\prettyPhoto\default\sprite_x.png" />
+    <Content Include="images\prettyPhoto\default\sprite_y.png" />
+    <Content Include="images\prettyPhoto\facebook\btnNext.png" />
+    <Content Include="images\prettyPhoto\facebook\btnPrevious.png" />
+    <Content Include="images\prettyPhoto\facebook\contentPatternBottom.png" />
+    <Content Include="images\prettyPhoto\facebook\contentPatternLeft.png" />
+    <Content Include="images\prettyPhoto\facebook\contentPatternRight.png" />
+    <Content Include="images\prettyPhoto\facebook\contentPatternTop.png" />
+    <Content Include="images\prettyPhoto\facebook\default_thumbnail.gif" />
+    <Content Include="images\prettyPhoto\facebook\loader.gif" />
+    <Content Include="images\prettyPhoto\facebook\sprite.png" />
+    <Content Include="images\prettyPhoto\light_rounded\btnNext.png" />
+    <Content Include="images\prettyPhoto\light_rounded\btnPrevious.png" />
+    <Content Include="images\prettyPhoto\light_rounded\default_thumbnail.gif" />
+    <Content Include="images\prettyPhoto\light_rounded\loader.gif" />
+    <Content Include="images\prettyPhoto\light_rounded\sprite.png" />
+    <Content Include="images\prettyPhoto\light_square\btnNext.png" />
+    <Content Include="images\prettyPhoto\light_square\btnPrevious.png" />
+    <Content Include="images\prettyPhoto\light_square\default_thumbnail.gif" />
+    <Content Include="images\prettyPhoto\light_square\loader.gif" />
+    <Content Include="images\prettyPhoto\light_square\sprite.png" />
+    <Content Include="images\search_icon.png" />
+    <Content Include="images\services\bg_services.jpg" />
+    <Content Include="images\services\services1.png" />
+    <Content Include="images\services\services2.png" />
+    <Content Include="images\services\services3.png" />
+    <Content Include="images\services\services4.png" />
+    <Content Include="images\services\services5.png" />
+    <Content Include="images\services\services6.png" />
+    <Content Include="images\service\image_bg.png" />
+    <Content Include="images\slider_one.jpg" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\html5shiv.js" />
+    <Content Include="js\jquery.isotope.min.js" />
+    <Content Include="js\jquery.js" />
+    <Content Include="js\jquery.prettyPhoto.js" />
+    <Content Include="js\main.js" />
+    <Content Include="js\respond.min.js" />
+    <Content Include="js\wow.min.js" />
+    <Content Include="Login.aspx" />
+    <Content Include="portfolio.html" />
+    <Content Include="Services.aspx" />
+    <Content Include="Student-Details.aspx" />
+    <Content Include="TestMail.aspx" />
+    <Content Include="VehicleScrapping.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccountActivate.aspx.cs">
+      <DependentUpon>AccountActivate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AccountActivate.aspx.designer.cs">
+      <DependentUpon>AccountActivate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminMaster.Master.cs">
+      <DependentUpon>AdminMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminMaster.Master.designer.cs">
+      <DependentUpon>AdminMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Dashboard.aspx.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Dashboard.aspx.designer.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Events.aspx.cs">
+      <DependentUpon>Events.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Events.aspx.designer.cs">
+      <DependentUpon>Events.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Jobs-Details.aspx.cs">
+      <DependentUpon>Jobs-Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Jobs-Details.aspx.designer.cs">
+      <DependentUpon>Jobs-Details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Student-Details.aspx.cs">
+      <DependentUpon>Student-Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Student-Details.aspx.designer.cs">
+      <DependentUpon>Student-Details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\View-Events.aspx.cs">
+      <DependentUpon>View-Events.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\View-Events.aspx.designer.cs">
+      <DependentUpon>View-Events.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\View-Jobs.aspx.cs">
+      <DependentUpon>View-Jobs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\View-Jobs.aspx.designer.cs">
+      <DependentUpon>View-Jobs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\View-Students.aspx.cs">
+      <DependentUpon>View-Students.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\View-Students.aspx.designer.cs">
+      <DependentUpon>View-Students.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="All-Jobs.aspx.cs">
+      <DependentUpon>All-Jobs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="All-Jobs.aspx.designer.cs">
+      <DependentUpon>All-Jobs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="All-Students.aspx.cs">
+      <DependentUpon>All-Students.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="All-Students.aspx.designer.cs">
+      <DependentUpon>All-Students.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusLogic.cs" />
+    <Compile Include="Career.aspx.cs">
+      <DependentUpon>Career.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Career.aspx.designer.cs">
+      <DependentUpon>Career.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Change-Password.aspx.cs">
+      <DependentUpon>Change-Password.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Change-Password.aspx.designer.cs">
+      <DependentUpon>Change-Password.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContactUs.aspx.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContactUs.aspx.designer.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerDetails.aspx.cs">
+      <DependentUpon>CustomerDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerDetails.aspx.designer.cs">
+      <DependentUpon>CustomerDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Events.aspx.cs">
+      <DependentUpon>Events.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Events.aspx.designer.cs">
+      <DependentUpon>Events.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ForgotPasswaord.aspx.cs">
+      <DependentUpon>ForgotPasswaord.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ForgotPasswaord.aspx.designer.cs">
+      <DependentUpon>ForgotPasswaord.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gallery.aspx.cs">
+      <DependentUpon>Gallery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Gallery.aspx.designer.cs">
+      <DependentUpon>Gallery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="HomeMaster.Master.cs">
+      <DependentUpon>HomeMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomeMaster.Master.designer.cs">
+      <DependentUpon>HomeMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Job-Details.aspx.cs">
+      <DependentUpon>Job-Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Job-Details.aspx.designer.cs">
+      <DependentUpon>Job-Details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Jobs.aspx.cs">
+      <DependentUpon>Jobs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Jobs.aspx.designer.cs">
+      <DependentUpon>Jobs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registration.aspx.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registration.aspx.designer.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reg_with_Image.aspx.cs">
+      <DependentUpon>Reg_with_Image.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reg_with_Image.aspx.designer.cs">
+      <DependentUpon>Reg_with_Image.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Send_mails.cs" />
+    <Compile Include="Services.aspx.cs">
+      <DependentUpon>Services.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services.aspx.designer.cs">
+      <DependentUpon>Services.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SqlHelper.cs" />
+    <Compile Include="Student-Details.aspx.cs">
+      <DependentUpon>Student-Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student-Details.aspx.designer.cs">
+      <DependentUpon>Student-Details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TestMail.aspx.cs">
+      <DependentUpon>TestMail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TestMail.aspx.designer.cs">
+      <DependentUpon>TestMail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VehicleScrapping.aspx.cs">
+      <DependentUpon>VehicleScrapping.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VehicleScrapping.aspx.designer.cs">
+      <DependentUpon>VehicleScrapping.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="images\portfolio\" />
+    <Folder Include="Upload\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>54736</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:54736/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,171 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="HomeMaster.master.cs" Inherits="TestTutorial101.HomeMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link href="css/animate.min.css" rel="stylesheet" />
+    <link href="css/prettyPhoto.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+    <link href="css/responsive.css" rel="stylesheet" />
+
+    <style>
+        .w3layouts-banner-1 {
+            background: url(../extra-images/Automotive_Banner.png) no-repeat 0px 0px;
+            background-size: cover;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            -ms-background-size: cover;
+            min-height: 300px;
+            text-align: center;
+            margin-bottom: 100px;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="homepage">
+
+    <form id="form1" runat="server">
+        <header id="header">
+            <nav class="navbar navbar-fixed-top" role="banner" style="border-bottom: 3px solid #59a244f7;">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="Default.aspx">
+                            <img src="images/logo.jpg" height="70" /></a>
+                    </div>
+
+                    <div class="collapse navbar-collapse navbar-right">
+                        <ul class="nav navbar-nav">
+
+                            <li id="LiAdmin" runat="server"><a href="Admin/Dashboard.aspx">Administrator</a></li>
+                            <li id="Default" runat="server"><a href="Default.aspx">Home</a></li>
+                            <li id="VehicleScrapping" runat="server"><a href="VehicleScrapping.aspx">Vehicle Scrapping</a> </li>
+                            <li id="Services" runat="server"><a href="Services.aspx">Services</a></li>
+                            <li id="Gallery" runat="server"><a href="Gallery.aspx">Gallery</a></li>
+                            <li id="Career" runat="server"><a href="Career.aspx">Career</a></li>
+                            <li id="ContactUs" runat="server"><a href="ContactUs.aspx">Contact</a></li>
+                            <li id="Login" runat="server"><a href="Login.aspx" id="Lilogin" runat="server">Login</a></li>
+                            <li class="dropdown" id="account" runat="server" style="margin-left: -20px">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span data-hover="Short Codes">
+                                    <asp:Label ID="lbluser" runat="server" Text=""></asp:Label>
+                                </span><b class="caret"></b></a>
+                                <ul class="dropdown-menu agile_short_dropdown">
+
+                                    <li><a href="Student-Details.aspx">My Account</a></li>
+                                    <li><a href="Change-Password.aspx">Change Password</a></li>
+                                    <li>
+                                        <asp:LinkButton ID="LnkLogOut" runat="server" OnClick="LnkLogOut_Click">Log Out</asp:LinkButton></li>
+
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--/.container-->
+            </nav>
+            <!--/nav-->
+
+        </header>
+        <!--/header-->
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+
+
+        <section id="bottom" style="background-color: #05162b;">
+            <div class="container wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                <div class="row">
+                </div>
+            </div>
+        </section>
+        <!--/#bottom-->
+
+
+
+
+        <div class="top-bar">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-12" style="color: #fff;">
+                        <div class="col-sm-3 ">
+                            <div class="widget">
+                                <h2 style="color: #E8CE0E;">AUTOMOTIVE 101 SOCIETY</h2>
+                                <ul>
+                                    <li>CSR Act for Society </li>
+                                    <li>Built Future for Society</li>
+                                    <li>Get Your old Vehicle Scraped</li>
+
+                                </ul>
+                                <img src="images/logo.jpg" height="70" width="200" />
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="widget">
+                                <h2 style="color: #E8CE0E;">OUR ADDRESS</h2>
+
+                                <p>Registered Office: 29, Indira Market, Mayur </p>
+                                <p>Vihar Phase-I, New Delhi-110092</p>
+                                 <p>Scrap Center: PLOT NO 790/178B, 816C VILLAGE BISRAKH</p>
+                                 <p>GREATER NOIDA, UP-201306</p>
+                                <p>+91-9891220966,7042482220,7303599010,9899935236,7503102225 </p>
+                                <p>support@automotive101society.com</p>
+
+                            </div>
+                        </div>
+                        <!--/.col-md-3-->
+                        <div class="col-sm-3">
+                            <div class="widget">
+                                <h2 style="color: #E8CE0E;">KEEP IN TOUCH WITH US</h2>
+
+                                <ul class="social-share">
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-skype"></i></a></li>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div class="social">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/.container-->
+        </div>
+        <!--/.top-bar-->
+        <footer id="footer" class="midnight-blue">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-sm-6">
+                        &copy; 2018  Automotive 101 Society. All Rights Reserved. 
+                    </div>
+
+
+                </div>
+            </div>
+        </footer>
+
+
+
+    </form>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
